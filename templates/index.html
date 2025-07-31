@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JerrySuite Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+        input[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro JerrySuite</h1>
+    <form method="POST">
+        <label>Presupuesto:</label>
+        <input type="text" name="presupuesto" required>
+
+        <label>Cliente:</label>
+        <input type="text" name="cliente" required>
+
+        <label>Lugar:</label>
+        <input type="text" name="lugar" required>
+
+        <label>Fecha:</label>
+        <input type="date" name="fecha" required>
+
+        <label>Versión:</label>
+        <input type="text" name="version" required>
+
+        <label>TC:</label>
+        <input type="text" name="tc" required>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
