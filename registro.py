@@ -1,12 +1,12 @@
 import openpyxl
 from openpyxl.styles import Font
-from pathlib import Path
+import os
 
 def registrar_datos(presupuesto, cliente, lugar, fecha, version, tc):
-    desktop = Path.home() / "Desktop"
-    archivo = desktop / "Metrados.xlsx"
+    # Guardar en el mismo directorio del script
+    archivo = os.path.join(os.path.dirname(__file__), "Metrados.xlsx")
 
-    if archivo.exists():
+    if os.path.exists(archivo):
         wb = openpyxl.load_workbook(archivo)
         ws = wb.active
     else:
